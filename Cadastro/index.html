@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<!-- formularios apenas para salvar dados do usuario para cadastro de curriculo-->
+	 
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Formulario</title>
+
+	<!-- file Css-->
+	<link rel="stylesheet" type="text/css" href="../Cadastro/style.css">
+	
+	<!-- file Javascript-->
+	<script src="file.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Login</h1>
+	</header>
+		<section>
+			<!-- essa form chama os method POST e action para chamar o arquivo-->
+			<form action="file.php" method="post" >
+
+				<label>Nome</label>
+				<input type="text" name="nome" required placeholder="Digite seu nome">
+
+				<label>Sobrenome</label>
+				<input type="text" name="sobrenome" required placeholder="Digite seu sobrenome">
+
+				<label for="Mãe">Nome da Mãe</label>
+				<input type="text" name="mae" required placeholder="Digite nome da sua mãe">
+
+				<label>Nome da Empresa</label>
+				<input type="text" name="empresa" placeholder="Digite nome da sua atual empresa">								
+
+				<label>Sexo</label>
+				Masculino <input type="radio" name="sexo" value="masculino">
+				Feminino <input type="radio" name="sexo" value="feminino"></br>
+				
+				<label for="email">E-mail</label>
+				<input type="email" name="email" required placeholder="Digite seu email">
+
+				<label for="senha">Senha</label>
+				<input type="password" name="senha" required placeholder="Crie uma senha">
+									
+
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+
+
+</body>
+</html>
