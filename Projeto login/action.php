@@ -6,11 +6,15 @@
 	<link rel="stylesheet" href="style.css">	
 </head>
 <body>
-    
+
 <?php
-
-
-
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = htmlspecialchars($_POST["nome"]);
+    $email = htmlspecialchars($_POST["email"]);
+    $senha = password_hash($_POST["senha"], PASSWORD_DEFAULT);
+    
+    echo "Usuário " . $nome . " e email " . $email . " com a senha foram salvos com sucesso.";
+}
 ?>
 
 
